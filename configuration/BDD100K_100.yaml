@@ -1,0 +1,33 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# BDD100K_10 dataset
+# parent
+# ├── yolov5
+# └── datasets
+#     └── bdd100K  ← downloads here (1 GB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../data/bdd100k/  # dataset root dir  # dataset root dir
+train: train  # train images (relative to 'path') 128 images
+val: val    # val images (relative to 'path') 128 images
+test: test  # test images (optional)
+
+# Classes
+names:
+  0: unknown
+  1: pedestrian
+  2: rider
+  3: car
+  4: truck
+  5: bus
+  6: train
+  7: motorcycle
+  8: bicycle
+  9: traffic light
+  10: traffic sign
+  11: other vehicle
+  12: other person
+  13: trailer
+  
+# Download script/URL (optional)
+#download: https://ultralytics.com/assets/coco128.zip
