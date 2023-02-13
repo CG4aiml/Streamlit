@@ -12,7 +12,7 @@ content = ''
 uploadedfilename = ''
 
 #BEGIN MODEL SECTION
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='Checkpoints/bdd100Kv3.pt')  # local model
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='Checkpoints/bdd100Kv3.pt', force_reload=True)  # local model
 
 # set model parameters
 model.conf = 0.25  # NMS confidence threshold
